@@ -1,18 +1,20 @@
+package Inheritance;
+
 class Parent {
     Parent() {
-        System.out.println("Parent Constructor");
+        System.out.println("Inheritance.Parent Constructor");
     }
 }
 
 class Child extends Parent {
 
     Child() {
-        super(); // Calls Parent constructor
-        System.out.println("Child Constructor");
+        super(); // Calls Inheritance.Parent constructor
+        System.out.println("Inheritance.Child Constructor");
     }
 
     Child(int a) {
-        this(); // Calls Child() constructor
+        this(); // Calls Inheritance.Child() constructor
         System.out.println(a);
     }
 }
