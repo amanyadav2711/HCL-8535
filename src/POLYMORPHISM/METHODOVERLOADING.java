@@ -1,6 +1,6 @@
-package Student;
+package POLYMORPHISM;
 
-public class student {
+class student {
     int sum;
     String name;
     student(int a,int b){
@@ -20,7 +20,7 @@ public class student {
 
     }
 
-    class demo{
+    class METHODOVERLOADING{
     public static void main(String[] args){
         student obj1=new student(10,20);
         student obj2=new student(10,20,30);

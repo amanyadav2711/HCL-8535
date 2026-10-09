@@ -1,4 +1,4 @@
-package Inheritance;
+package POLYMORPHISM;
 
 class parent{
    void show(){
