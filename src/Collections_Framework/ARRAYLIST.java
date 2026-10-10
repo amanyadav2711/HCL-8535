@@ -1,4 +1,4 @@
-package Collections;
+package Collections_Framework;
 import java.util.*;
 
 public class ARRAYLIST {
