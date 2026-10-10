@@ -1,4 +1,4 @@
-package Encapsulation;
+package OOPS.Encapsulation;
 
 public class ENCAPSULATION {
 }

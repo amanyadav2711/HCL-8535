@@ -1,4 +1,4 @@
-package POLYMORPHISM;
+package OOPS.POLYMORPHISM;
 
 class student {
     int sum;

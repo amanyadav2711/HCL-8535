@@ -1,4 +1,4 @@
-package Inheritance;
+package OOPS.Inheritance;
 
 class Student {
     static int count = 0;
