@@ -1,7 +1,8 @@
 package Collections_Framework.Task1;
-import Collections_Framework.Arraylist.ARRAYLIST;
-
 import java.util.*;
+
+
+
 public class STUDENT {
     int roll,age;
     String name;
@@ -32,10 +33,18 @@ public class STUDENT {
 //        for(STUDENT s:list){
 //            System.out.println("ROLL NO="+s.roll+" "+"Marks="+s.marks+" "+"AGE="+s.age+" "+"Name="+s.name);
 //        }
-        list.sort((a,b)->Double.compare(a.marks, b.marks));
+        //list.sort((a,b)->Double.compare(a.marks, b.marks));   ->Lambda expression
+
+        class mycomparator implements Comparator<STUDENT>{
+            public int compare(STUDENT s1, STUDENT s2){
+                return Integer.compare(s1.age,s2.age);
+            }
+        }
+        Collections.sort(list,new mycomparator());
         for(STUDENT s:list){
             System.out.println("ROLL NO="+s.roll+" "+"Marks="+s.marks+" "+"AGE="+s.age+" "+"Name="+s.name);
         }
 
      }
+
 }
