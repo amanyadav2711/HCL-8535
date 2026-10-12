@@ -69,6 +69,7 @@ public class ASSIGNMENT1 {
         System.out.println("Emp_id: " + emp_id);
         System.out.println("Name: " + name);
         System.out.println("Bonus: Rs. " + bonus());
+        System.out.println(" ");
     }
 }
 
