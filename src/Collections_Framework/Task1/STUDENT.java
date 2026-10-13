@@ -41,6 +41,13 @@ public class STUDENT {
             }
         }
         Collections.sort(list,new mycomparator());
+
+//         List<STUDENT> list1=list.stream()
+//                 .sorted(Comparator.comparingDouble(s->s.marks))
+//                 .toList();
+//        list1.forEach(s -> System.out.println(s.name + " " + s.marks));
+
+
         for(STUDENT s:list){
             System.out.println("ROLL NO="+s.roll+" "+"Marks="+s.marks+" "+"AGE="+s.age+" "+"Name="+s.name);
         }
