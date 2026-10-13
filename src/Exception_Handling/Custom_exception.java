@@ -14,7 +14,8 @@ class InvalidAge extends Exception{
 
         public static void main(String[] args) {
             try{
-                validage(16);
+                validage(19);
+                //validage(17);
             } catch (InvalidAge e) {
                 System.out.println(e.getMessage());
             }
