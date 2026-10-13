@@ -1,0 +1,16 @@
+package OOPS.Interface;
+
+public class cat implements Animal{
+
+
+    @Override
+    public void sleep() {
+        System.out.println("cat is sleeping");
+    }
+
+    @Override
+    public void run(){
+        System.out.println("cat is running");
+
+    }
+}
