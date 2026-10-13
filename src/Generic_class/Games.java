@@ -1,0 +1,18 @@
+package Generic_class;
+
+public class Games<T,E extends Number> {
+    T a;
+    E b;
+    Games(T a, E b){
+        this.a=a;
+        this.b=b;
+    }
+
+    public T getA() {
+        return a;
+    }
+    public E getB(){
+        return b;
+    }
+
+}

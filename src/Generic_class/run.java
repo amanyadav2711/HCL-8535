@@ -1,0 +1,10 @@
+package Generic_class;
+
+public class run {
+    public static void main(String[] args) {
+       Games<String,Integer> g1 = new Games<>("Kohli Ji",18);
+        System.out.println(g1.getA());
+        System.out.println(g1.getB());
+
+    }
+}
