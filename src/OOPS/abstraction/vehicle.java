@@ -1,0 +1,6 @@
+package OOPS.abstraction;
+
+public abstract class vehicle {
+    public abstract void accelerate();
+    protected abstract void deaccelerate();
+}
