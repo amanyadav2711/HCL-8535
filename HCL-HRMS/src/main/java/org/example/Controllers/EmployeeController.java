@@ -1,4 +1,3 @@
-
 package org.example.Controllers;
 
 import org.example.entity.Employee;
@@ -49,5 +48,42 @@ public class EmployeeController {
         }
 
         return ResponseEntity.ok(emp);
+    }
+
+    // Delete Employee By ID
+    @DeleteMapping("/emp/{emp_id}")
+    public ResponseEntity<String> deleteEmpbyId(
+            @PathVariable("emp_id") long emp_id) {
+
+        String result = empServiceImp.deletebyID(emp_id);
+
+        if (result.equals("Employee Not Found")) {
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
+                    .body("Employee not found with ID: " + emp_id);
+        }
+
+        return ResponseEntity.ok(
+                "Employee deleted successfully with ID: " + emp_id
+        );
+    }
+
+    // Update Employee By ID
+    @PutMapping("/emp/{emp_id}")
+    public ResponseEntity<String> updateEmpbyId(
+            @PathVariable("emp_id") long emp_id,
+            @RequestBody Employee updatedEmp) {
+
+        String result = empServiceImp.updatebyId(emp_id, updatedEmp);
+
+        if (result.equals("Employee Not Found")) {
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
+                    .body("Employee not found with ID: " + emp_id);
+        }
+
+        return ResponseEntity.ok(
+                "Employee updated successfully with ID: " + emp_id
+        );
     }
 }
